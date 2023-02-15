@@ -5,8 +5,13 @@
 }
 body{
     background-color: #aaaaaa;
+    height: 100vh;
+    min-width: 1060px;
 }
 
+main{
+    height: 100vh;
+}
 
 .tittle{
     position: absolute;
@@ -35,12 +40,11 @@ body{
     left: 80%;
     top: -110px;
     animation: mymove 5s forwards;
+    width: 120px;
 }
 
 .sub-tittle h3{
     color: #000;
-    
-    
     top: 310px;
 }
 
@@ -112,13 +116,12 @@ body{
    height: 70%;
 }
 
-/* @keyframes mymove {
-    0%   {top: 0px;}
-    25%  {top: 50px;}
-    50%  {top:100px;}
-    75%  {top: 50px}
-    100% {top: 0px;}
-  } */
+.footer{
+    text-align: center;
+    background-color: #535252;
+    padding: 1px;
+    width: 100%;
+}
 
    @keyframes mymove {
    for {top: 0px}
@@ -131,3 +134,42 @@ body{
     to  {color: #000;}
   }
 
+
+
+.matches-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.semi-tittle{
+    position: relative;
+    right: 240px;  
+}
+.sub-tittle-rules{
+    margin-bottom: 20px;
+}
+  .table-contain{
+    width: 540px;
+  }
+
+  .info-cont{
+    display: flex;
+    flex-direction: column;
+  }
+  .semi-article{
+    display: flex;
+    justify-content: space-between;
+  
+
+  }
+   span{
+        font-weight: bold;
+   }
+
+   .main-rules{
+    margin: 20px;
+    padding: 40px;
+    background-color: #e0c216;
+    border-radius: 20px;
+   }
