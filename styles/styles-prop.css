@@ -30,12 +30,14 @@ main{
 }
 
 .sub-tittle{
-    margin-top: -15px;
+    display: flex;
+    margin-top: 5px;
     margin-bottom: 20px  ;
     width: 100%;
     height: 40px;
     background-color: #e0c216;
-    text-align: center;
+    justify-content: center;
+
 }
 
 .logo{
@@ -48,7 +50,7 @@ main{
 
 .sub-tittle h3{
     color: #000;
-    top: 310px;
+    margin: auto 0;
 }
 
 .main-container{
@@ -164,7 +166,7 @@ main{
     display: flex;
     flex-direction: column;
     background-color: #e0c216;
-    width: 100%;
+    width: 60%;
     padding: 10px;
     border-top-right-radius:10px;
     border-top-left-radius: 10px;
