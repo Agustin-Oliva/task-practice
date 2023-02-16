@@ -9,6 +9,7 @@ body{
     display: flex;
     flex-direction: column;
     min-width: 800px;
+    margin: 0px;
 }
 
 main{
@@ -130,7 +131,7 @@ main{
    @keyframes mymove {
    for {top: 0px}
 
-   to { top:245px}
+   to { top: 238px}
   } 
   @keyframes changecolor {
     for {color: #e0c216;}
