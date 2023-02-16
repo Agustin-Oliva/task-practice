@@ -145,8 +145,13 @@ main{
     
 }
 .semi-tittle{
+    text-align: center;
     position: relative;
     left: -100px;
+    background-color: #e0c216;
+    width: 230px;
+    border-radius: 8px;
+    padding: 2px;
 }
 .sub-tittle-rules{
     margin-bottom: 20px;
@@ -158,6 +163,12 @@ main{
   .info-cont{
     display: flex;
     flex-direction: column;
+    background-color: #e0c216;
+    width: 100%;
+    padding: 10px;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+    margin-top: 10px;
   }
   .semi-article{
     display: flex;
