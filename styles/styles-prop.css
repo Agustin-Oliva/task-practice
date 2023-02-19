@@ -4,16 +4,16 @@
 
 }
 body{
-    background-color: #aaaaaa;
-    height: 100vh;
+    background-color: #aaaaaa !important;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    min-width: 800px;
+    /* min-width: 800px; */
     margin: 0px;
 }
 
 main{
-    height: 100vh;
+    height: 100%;
 }
 
 .tittle{
@@ -57,9 +57,13 @@ main{
 .main-container{
     position: relative;
     margin: 0 auto;
+    height: 100vh;
 }
 .main-container-dos{
     max-width: 700px;
+}
+.main-contact{
+    height: 100vh;
 }
 
 .nav-bar{
@@ -87,7 +91,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .text-container{
@@ -131,7 +135,7 @@ main{
    @keyframes mymove {
    for {top: 0px}
 
-   to { top: 238px}
+   to { top: 233px}
   } 
   @keyframes changecolor {
     for {color: #e0c216;}
@@ -145,16 +149,17 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    margin-top: 10px;
 }
 .semi-tittle{
     text-align: center;
     position: relative;
     left: -100px;
     background-color: #e0c216;
-    width: 230px;
+    width: 250px;
     border-radius: 8px;
     padding: 2px;
+    font-size: 15px;
 }
 .sub-tittle-rules{
     margin-bottom: 20px;
@@ -192,3 +197,63 @@ main{
     margin: 20px auto;
     box-shadow: 10px 10px 10px black;
    }
+
+   .form-control{
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #ffffff !important;
+    color: #f8f8f8 !important;
+   }
+   .row{
+    margin: 10px 0;
+   }
+   .container-form{
+    padding: 10px;
+    margin: 30px 0;
+    border-radius: 15px;
+    color: #e0c216;
+    box-shadow: 10px 10px 10px rgb(250, 247, 247);
+   }
+
+   .container-form h3{
+    font-weight: bold;
+   }
+   .col-btn{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+   }
+
+  .container-map{
+    background-color: #535252;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 10px 10px 10px rgb(250, 247, 247);
+    color: #e0c216;
+  }
+
+  .col-map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+  .locations{
+    padding: 3px;
+    background-color: #e0c216;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+
+@media (max-width:640px) {
+   .nav-bar{
+    width: 100%;
+   }
+   .logo{
+    animation: none;
+    top: 230px;
+    left: 30px;
+   }
+}
