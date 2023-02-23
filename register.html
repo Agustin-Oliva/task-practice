@@ -47,295 +47,118 @@
 
         <main class="container">
             <form class="container container-form" method="get" action="show_data.html" style="background-color: #535252;">
-            
-            
-            <div class="row">
-    
-                    <div class="col-sm-12 col-md-12 col-lg-3">
-                        <label class="form-label" for="name">Player's First Name:</label>
-                    </div>
-                    
-                    <div class="col-sm-12 col-md-12 col-lg-3">
-                        <input class="form-control" type="text" name="name" id="Name">
-                    </div>
-    
-                    <div class=" col-sm-12 col-md-12 col-lg-2">
-                        <label class="form-label" for="lastname">Last Name:</label>
-                    </div>
-    
-                    <div class=" col-sm-12 col-md-12 col-lg-4">
-                        <input class="form-control" type="text" name="lastname" id="Last-name">
-                    </div>
-    
-            </div>
-
-
-            <div class="row">
-                    <div class=" col-sm-12 col-md-2">
-                        <label class="form-label" for="street">Street Address</label>
-                    </div>
-                    <div class="col-sm-12 col-md-10">
-                        <input class="form-control" type="text">
-                    </div>
-            </div>
-    
-    
-            <div class="row">
-                    <div class="col-sm-12 col-md-1">
-                        <label for="city" class="form-label">City:</label>
-                    </div>
-                    <div class="col-sm-12 col-md-5">
-                        <input name="city" type="text" class="form-control">
-                    </div>
-                    <div class="col-sm-12 col-md-2">
-                        <label for="zipcode" class="form-label">Zip Code:</label>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <input name="zipcode" type="text" class="form-control">
-                    </div>
-            </div>
-    
-    
-    
-    
-            <div class="row">
-    
-                    <div class="col-sm-6 col-md-3">
-                        <label for="bday" class="form-label">Birth Date(mm/dd/yyyy):</label>
-                    </div>
-    
-                    <div class="col-sm-6 col-md-3">
-                        <input name="bday" type="date" class="form-control">
-                    </div>
-    
-                    
-                    <div class="col-sm-4 col-md-6 divs-media">
-                        <div class="col-sm-4 col-md-2 col-pad">
-                            <label class="form-label" for="gender">Gender:</label>
-                        </div>
-        
-                        <div class="col-sm-4 col-md-5 form-check col-pad">
-                                <label class="form-check-label" for="gender">
-                                  Male
-                                </label>
-                                <input name="gender" class="form-check-input" type="radio" value="Male" id="gender">                              
-                        </div>
-        
-                        <div class="col-sm-4 col-md-5 form-check col-pad">
-                            <label class="form-check-label" for="gender">
-                              Female
-                            </label>
-                            <input name="gender" class="form-check-input" type="radio" value="Female"  id="gender">                                         
-                        </div>
-                    </div>
-                  
-                                 
-            </div>
-    
-    
-            <div class="row">
-    
-                    <div class="col-12 col-sm-12 col-lg-1">
-                        <label for="grade" class="form-label">Grade:</label>
-                    </div>
-    
-                    <div class="col-sm-3 col-lg-2">
-                        <input class="form-check-input" type="radio" value="Pre-School" name="grade"  id="grade">
-                        <label class="form-check-label label-xs" for="grade">
-                            Pre-School
-                          </label>                                         
-                    </div>
-    
-    
-                    <div class="col-div col-sm-7 col-lg-9">
-                        <div class="div">
-                            <input class="form-check-input" type="radio" name="grade" value="1st" id="grade">
-                            <label class="form-check-label" for="grade">
-                                1st
-                            </label>
-                            </div>
                         
-                           <div class="div">
-                            <input class="form-check-input" type="radio" name="grade" value="2nd" id="grade">
-                        <label class="form-check-label" for="grade">
-                            2nd
-                          </label> 
-                           </div> 
-                          <div class="div">
-                            <input class="form-check-input" type="radio" name="grade" value="3rd" id="grade">
-                        <label class="form-check-label" for="grade">
-                            3rd
-                          </label> 
-                          </div>
-                          <div class="div">
-                            <input class="form-check-input" type="radio" name="grade" value="4th" id="grade">
-                            <label class="form-check-label" for="grade">
-                                4th
-                              </label> 
-                          </div>
-                          <div class="div">
-                            <input class="form-check-input" type="radio" name="grade" value="5th" id="grade">
-                            <label class="form-check-label" for="grade">
-                                5th
-                              </label>
-                          </div>
-            
-                           
+            <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <label class="form-label" for="name">Player's First Name:</label>
+                        <input class="form-control" type="text" name="name" id="Name" required>
+                    </div>
+                   
+                    <div class=" col-sm-12 col-md-12 col-lg-6">
+                        <label class="form-label" for="lastname">Last Name:</label>
+                        <input class="form-control" type="text" name="lastname" id="Last-name" required>
+                    </div>
+            </div>
+
+
+            <div class="row">
+                    <div class=" col-sm-12 col-md-12 col-lg-6">
+                        <label class="form-label" for="street">Street Address</label>
+                        <input class="form-control" type="text" required>
+                    </div> 
+            </div>
+    
+    
+            <div class="row">
+                    <div class="col-7 col-sm-7 col-md-6">
+                        <label for="city" class="form-label">City:</label>
+                        <input name="city" type="text" class="form-control" required>
+                    </div>               
+                    <div class="col-5 col-sm-5 col-md-2">
+                        <label for="zipcode" class="form-label">Zip Code:</label>
+                        <input name="zipcode" type="text" class="form-control" required>
+                    </div>
+            </div>
+    
+    
+    
+    
+            <div class="row">
+                     <div class="col-6 col-sm-6 col-md-4">
+                        <label for="bday" class="form-label">Birth Date(mm/dd/yyyy):</label>
+                        <input name="bday" type="date" class="form-control" required>
+                     </div>
+
+                     <div class="col-6 col-sm-6 col-md-4 col-lg-3">                       
+                            <label for="Gender" class="label">Select your Gender</label>
+                            <select  class="form-select form-select-sm" name="Gender" id="select1" required>
+                               <option value="Male">Male</option>
+                               <option value="Female">Female</option>
+                            </select>
+                     </div>             
+            </div>
+    
+    
+            <div class="row">
+                    <div class="col-6 col-lg-3">
+                        <label class="form-label" for="Grade">Grade:</label>
+                        <select class="form-select form-select-sm" name="Grade" id="Grade" required>
+                            <option value="Pre-School">Pre-School</option>
+                            <option value="1st">1st</option>
+                            <option value="2nd">2nd</option>
+                            <option value="3rd">3rd</option>
+                            <option value="4th">4th</option>
+                            <option value="5th">5th</option>
+                        </select>
                     </div>
             </div>
 
 
             <div class="row row-sect-two">
-                <h3>Which elementary school do you live near?</h3>
-                <h6>Closest School:</h6>
-                
-                <div class="col-6 col-cen">
-                    <div class="div-check-cont">
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="AJ Katzenmaier" id="flexCheckDefault" name="school">
-                            <label class="form-check-label" for="school">
-                                AJ Katzenmaier
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Greenbay" id="flexCheckDefault" name="school">
-                            <label class="form-check-label" for="school">
-                                Greenbay
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Howard A Yeager" id="flexCheckDefault" name="school">
-                            <label class="form-check-label" for="school">
-                                Howard A Yeager
-                              </label>  
-                        </div>
-                    </div>
-                     
-
-                </div>
-
-                <div class="col-6 col-cen">
-                    <div class="div-check-cont">
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Marjorie P Hart" id="flexCheckDefault" name="school">
-                            <label class="form-check-label" for="school">
-                                Marjorie P Hart
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="North Elementary" id="flexCheckDefault" name="school">
-                            <label class="form-check-label" for="school">
-                                North Elementary
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="South Elementary" id="flexCheckDefault" name="school">
-                            <label class="form-check-label" for="school">
-                                South Elementary
-                              </label>  
-                        </div>
-                    </div>
-            </div>
-                
+                <h3>Which elementary school do you live near?</h3>                                
+               <div class="col-6 col-lg-3">
+                <label class="form-control-label" for="School">Closest School:</label>
+                <select class="school form-select form-select-sm" name="School" id="School" required>
+                    <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                    <option value="Greenbay">Greenbay</option>
+                    <option value="Howard A Yeager">Howard A Yeager</option>
+                    <option value="Marjorie P Hart">Marjorie P Hart</option>
+                    <option value="North Elementary">North Elementary</option>
+                    <option value="South Elementary">South Elementary</option>
+                </select>
+               </div>           
             </div>
 
 
             <div class="row row-sect-three">
-                <h3>What Position(s) do you normally play?(check all that apply)</h3>
-                
-                <div class="col-6 col-cen">
-                    <div class="div-check-cont">
-                        <div class="div-check">
-                            <input class="form-check-input" type="checkbox" name="position" value="Forward" id="flexCheckDefault">
-                            <label class="form-check-label" for="position">
-                                Forward
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="checkbox" name="position" value="Defense" id="flexCheckDefault">
-                            <label class="form-check-label" for="position">
-                                Defense
-                              </label>  
-                        </div>
-                    </div>
-                        
-                </div>
-                
-                <div class="col-6 col-cen">
-                    <div class="div-check-cont">
-                        <div class="div-check">
-                            <input class="form-check-input" type="checkbox" name="position" value="Midfield" id="flexCheckDefault">
-                            <label class="form-check-label" for="position">
-                                Midfield
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="checkbox" name="position" value="Goalkeeper" id="flexCheckDefault">
-                            <label class="form-check-label" for="position">
-                                Goalkeeper
-                              </label>  
-                        </div>       
-                </div>
+                <h3>What Position(s) do you normally play?(check all that apply)</h3>                           
+                    <div class="col-6 col-lg-3">
+                        <label for="Position">Position(s):</label>
+                        <select class="form-select form-select-sm" name="Position" id="Position" multiple required>
+                            <option value="Forward">Forward</option>
+                            <option value="Defense">Defense</option>
+                            <option value="Midfield">Midfield</option>
+                            <option value="Goalkeeper">Goalkeeper</option>
+                        </select>
                     </div>
                        
             </div>
 
             <div class="row row-sect-four">
                 <h3>Uniform Size:</h3>
-                
-                <div class="col-6 col-cen">
-                    <div class="div-check-cont">
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Youth Small" id="flexCheckDefault" name="uniform">
-                            <label class="form-check-label" for="uniform">
-                                Youth Small
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Youth Medium" id="flexCheckDefault" name="uniform">
-                            <label class="form-check-label" for="uniform">
-                                Youth Medium
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Youth Large" id="flexCheckDefault" name="uniform">
-                            <label class="form-check-label" for="uniform">
-                                Youth Large
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Small" id="flexCheckDefault" name="uniform">
-                            <label class="form-check-label" for="uniform">
-                                Small
-                              </label>  
-                        </div>
-                    </div>
-                       
-                </div>
-                
-                <div class="col-6 col-cen">
-                    <div class="div-check-cont">
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Medium" id="flexCheckDefault" name="uniform">
-                            <label class="form-check-label" for="uniform">
-                                Medium
-                              </label>  
-                        </div>
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Large" id="flexCheckDefault" name="uniform">
-                            <label class="form-check-label" for="uniform">
-                                Large
-                              </label>  
-                        </div> 
-                        <div class="div-check">
-                            <input class="form-check-input" type="radio" value="Extra-Large" id="flexCheckDefault" name="uniform">
-                            <label class="form-check-label" for="uniform">
-                                Extra-Large
-                              </label>  
-                        </div>       
-                </div>
-                    </div>
-                    
+                <div class="col-6 col-lg-3">
+                    <label for="Uniform">Select your Size:</label>
+                    <select class="form-select form-select-sm" name="Uniform" id="Uniform" required>
+                        <option value="Youth Small">Youth Small</option>
+                        <option value="Youth Medium">Youth Medium</option>
+                        <option value="Youth Large">Youth Large</option>
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                        <option value="Extra-Large">Extra-Large</option>
+                    </select>
+
+                </div> 
                 
             </div>
 
@@ -359,35 +182,28 @@
             </div>
 
         <div class="row">
-                <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="col-sm-12 col-md-6 col-lg-6">
                     <label for="firma" class="form-label">Parent/GuardianSignature:</label>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <input  name="firma" type="text" class="form-control input-firma">
-                </div>
-        
+                    <input  name="firma" type="text" class="form-control input-firma" required>
+                </div>        
         </div>
 
     <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="col-sm-4 col-md-6 col-lg-3">
                 <label for="firma-date" class="form-label">date:</label>
-            </div>
-            <div class="col-sm-3 col-md-2">
-                <input name="firma-date" type="date" class="form-control">
-            </div>
-    
+                <input name="firma-date" type="date" class="form-control" required>
+            </div>   
     </div>
 
     <div class="row row-flex">
         <div class="col col-btn">
             <input class="btn btn-primary" type="submit">
-    
-            </div>
         </div>
+    </div>
         
     </form>
             
-        </main>
+    </main>
         
         
         <footer class="footer">

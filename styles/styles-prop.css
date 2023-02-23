@@ -8,7 +8,6 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* min-width: 800px; */
     margin: 0px;
 }
 
@@ -61,6 +60,9 @@ main{
 .main-container{
     position: relative;
     margin: 0 auto;
+    height: 100%;
+}
+.main-container-uno{
     height: 100vh;
 }
 
@@ -239,14 +241,11 @@ span{
 .container-form h3{
     font-weight: bold;
    }
-
-.container-form row{
-    margin: 10px 0;
-   }
-
-.col-pad{
-    margin: 10px 0;
-   }
+.form-select{
+    background-color: #aaaaaa;
+    color: #000;
+    border: 1px solid #ffffff;
+}
 
 .col-btn{
     display: flex;
@@ -418,7 +417,12 @@ iframe{
     padding: 0 15px;
   }
   .container-form{
-    font-size: 12px;
+    font-size: 15px;
+    box-shadow: none;
+  }
+  .section-container{
+    width: 80%;
+    margin: 10px auto;
   }
 }
 
@@ -432,6 +436,35 @@ iframe{
     .semi-article p{
         font-size: 14px;
     }
+    .text-dos{
+        height: 500px;
+        width: 80%;
+        overflow-y: scroll;    
+    }
+
+    .text-dos::-webkit-scrollbar,
+    .main-rules::-webkit-scrollbar {
+        width: 12px;               
+      }
+      
+      .text-dos::-webkit-scrollbar-track,
+      .main-rules::-webkit-scrollbar-track{
+        background: #e0c216;   
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px ;
+      }
+      
+      .text-dos::-webkit-scrollbar-thumb,
+      .main-rules::-webkit-scrollbar-thumb{
+        background-color: #535252;    
+        border-radius: 20px;       
+        border: 3px solid #d3b50a;  
+      }
+
+      .main-rules{
+        height: 500px;
+        overflow-y: scroll;
+      }
 }
 
 @keyframes mymove {
