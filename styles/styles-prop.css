@@ -101,12 +101,21 @@ main{
 
 }
 
-.text-container{
+.section-dos p{
+    border-bottom: 1px solid #000;
+}
+
+.section-container{
+    margin-top: 20px;
     text-align: center;
     background-color: #e0c216;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px black;
+}
+
+.dates-container{
+    border-bottom: 1px solid #000;
 }
 
 .aside{
@@ -125,9 +134,6 @@ main{
     border-bottom: 2px solid black;  
 }
 
-.text-container p{
-    border-bottom: 2px solid black;  
-}
 
 .main-container-tres{
    width: 50%;
@@ -166,6 +172,20 @@ main{
 
 .table-contain{
     width: 540px;
+    border: 2px solid #000;
+  }
+
+.table-contain td{
+    border: 2px solid #000;
+  }
+thead{
+    background-color: #d3b50a;
+}
+tbody{
+    background-color: #f1f1f1;
+}
+thead th{
+    border: 2px solid #000;
   }
 
 .info-cont{
